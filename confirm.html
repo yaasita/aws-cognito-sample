@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cognito Test</title>
+        <link rel="stylesheet" href="./css/wingcss.css">
+        <script src="./js/aws-cognito-sdk.min.js"></script>
+        <script src="./js/amazon-cognito-identity.min.js"></script>
+        <script src="./js/vue.js"></script>
+        <style type="text/css">
+            #confirm input {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Confirm</h1>
+        <div id="confirm">
+            <input type="text" v-model="username" placeholder="user name"><br>
+            <input type="text" v-model="code" placeholder="verify code"><br>
+            <button class='outline' v-on:click="send_confirm">Confirm</button>
+            <hr>
+        </div>
+        <script src="./js/confirm.js"></script>
+        <a href="/">back</a>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cognito Test</title>
+        <link rel="stylesheet" href="./css/wingcss.css">
+        <script src="./js/aws-sdk.min.js"></script>
+        <script src="./js/aws-cognito-sdk.min.js"></script>
+        <script src="./js/amazon-cognito-identity.min.js"></script>
+        <script src="./js/vue.js"></script>
+        <style type="text/css">
+            #update input {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Update Attributes</h1>
+        <div id="update">
+            <input type="text" v-model="username" placeholder="user name"><br>
+            <input type="text" v-model="password" placeholder="password"><br>
+            <input type="email" v-model="email" placeholder="email"><br>
+            <input type="text" v-model="phone_number" placeholder="phone_number">(example: +818054917635)<br>
+            <button class='outline' v-on:click="mod_attr">Modify</button>
+            <hr>
+        </div>
+        <script src="./js/update-attributes.js"></script>
+        <a href="/">back</a>
+    </body>
+</html>

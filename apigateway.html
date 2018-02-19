@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cognito Test</title>
+        <link rel="stylesheet" href="./css/wingcss.css">
+        <script src="./js/aws-cognito-sdk.min.js"></script>
+        <script src="./js/amazon-cognito-identity.min.js"></script>
+        <script src="./js/aws-sdk.min.js"></script>
+        <script src="./js/vue.js"></script>
+        <style type="text/css">
+            #apigateway input {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>API Gateway</h1>
+        <div id="apigateway">
+            <input type="text" v-model="postdata" placeholder="postdata"><br>
+            <button class='outline' v-on:click="postapi">Post to API Gateway</button>
+            <hr>
+        </div>
+        <script src="./js/apigateway.js"></script>
+        <a href="/">back</a>
+    </body>
+</html>
